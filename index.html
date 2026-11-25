@@ -98,63 +98,178 @@
     </section>
 
     <section class="scene work" id="work" data-scene="03">
-      <div class="section-kicker reveal"><span>03 / SELECTED WORK</span><span>IDEAS MADE TANGIBLE</span></div>
-      <div class="work-heading reveal">
-        <h2>THINGS I’VE<br><span>BUILT SO FAR.</span></h2>
-        <p>A selection of experiments and applications<br>that reflect how I think and build.</p>
+  <div class="section-kicker reveal"><span>03 / SELECTED WORK</span><span>UNBOX TO EXPLORE</span></div>
+
+  <div class="work-heading reveal">
+    <h2>THINGS I’VE<br><span>BUILT SO FAR.</span></h2>
+    <p>Click the box to unbox completed builds<br>and active experiments in progress.</p>
+  </div>
+
+  <div class="magic-stage reveal" id="workMagicStage" data-state="closed">
+    <!-- Pre-animation interactive box -->
+    <div class="magic-box-wrap">
+      <button type="button" class="magic-box" id="magicBoxBtn" aria-expanded="false" aria-controls="workVault">
+        <span class="magic-pulse-ring" aria-hidden="true"></span>
+        <span class="magic-lid" aria-hidden="true">
+          <span class="magic-lid-trim"></span>
+        </span>
+        <span class="magic-body" aria-hidden="true">
+          <span class="magic-emblem">GM</span>
+          <span class="magic-spark">✦</span>
+        </span>
+        <span class="magic-cue">
+          <span class="magic-cue-dot"></span>
+          <span class="magic-cue-text">CLICK TO UNBOX MAGIC</span>
+          <span class="magic-cue-arrow">↓</span>
+        </span>
+      </button>
+      <button type="button" class="magic-reset" id="magicResetBtn" aria-label="Close project box">
+        CLOSE BOX ↺
+      </button>
+    </div>
+
+    <!-- Revealed & arranged sections -->
+    <div class="work-vault" id="workVault">
+      <div class="work-group">
+        <div class="work-group-head">
+          <span>01 / COMPLETED</span>
+          <span>SHIPPED &amp; EXPERIMENTED</span>
+        </div>
+        <div class="work-cards-grid">
+          <article class="project-card is-linked" style="--i:0">
+            <a class="project-card-link" href="https://ironman-cursor-bot.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="Open Ironman-cursor bot"></a>
+            <div class="project-art art-warm">
+              <div class="art-top"><span>01 / AI TOOL</span><span>COMPLETED</span></div>
+              <div class="art-orb orb-copper"></div>
+              <div class="art-word">IRON<br><span>MAN</span></div>
+              <div class="art-bottom"><span>CURSOR BOT</span><span>PYTHON</span></div>
+            </div>
+            <div class="project-meta"><div><span class="project-index">01</span><h3>Ironman-cursor bot</h3></div><span class="status status-built">COMPLETED</span></div>
+            <p>Interactive cursor control bot inspired by gesture/HUD workflows.</p>
+          </article>
+
+          <article class="project-card is-linked" style="--i:1">
+            <a class="project-card-link" href="https://cursor-processing-robot-nu.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="Open Cursor processing robot"></a>
+            <div class="project-art art-sky">
+              <div class="art-top"><span>02 / AUTOMATION</span><span>COMPLETED</span></div>
+              <div class="art-orb orb-blue"></div>
+              <div class="art-word">CURSOR<br><span>ROBOT</span></div>
+              <div class="art-bottom"><span>PROCESSING SYSTEM</span><span>AUTOMATION</span></div>
+            </div>
+            <div class="project-meta"><div><span class="project-index">02</span><h3>Cursor processing robot</h3></div><span class="status status-built">COMPLETED</span></div>
+            <p>Automated cursor movement and input processing utility.</p>
+          </article>
+
+          <article class="project-card is-linked" style="--i:2">
+            <a class="project-card-link" href="https://student-result-analyzer-azure.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="Open Student result analyzer"></a>
+            <div class="project-art art-sand">
+              <div class="art-top"><span>03 / EDUCATION</span><span>COMPLETED</span></div>
+              <div class="art-orb orb-gold"></div>
+              <div class="art-word">RESULT<br><span>ANALYZER</span></div>
+              <div class="art-bottom"><span>STUDENT INSIGHTS</span><span>JS / CHARTS</span></div>
+            </div>
+            <div class="project-meta"><div><span class="project-index">03</span><h3>Student result analyzer</h3></div><span class="status status-built">COMPLETED</span></div>
+            <p>Academic performance analyzer turning marks into clear visual insights.</p>
+          </article>
+
+          <article class="project-card is-linked" style="--i:3">
+            <a class="project-card-link" href="https://simple-python-debugger.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="Open Simple python debugger"></a>
+            <div class="project-art art-mint">
+              <div class="art-top"><span>04 / DEV TOOL</span><span>COMPLETED</span></div>
+              <div class="art-orb orb-mint"></div>
+              <div class="art-word">PYTHON<br><span>DEBUGGER</span></div>
+              <div class="art-bottom"><span>TRACE · FIX</span><span>FLASK / PYTHON</span></div>
+            </div>
+            <div class="project-meta"><div><span class="project-index">04</span><h3>Simple python debugger</h3></div><span class="status status-built">COMPLETED</span></div>
+            <p>Browser-based debugger highlighting tracebacks and practical fixes.</p>
+          </article>
+
+          <article class="project-card is-linked" style="--i:4">
+            <a class="project-card-link" href="https://live-processing-black-hole.onrender.com/" target="_blank" rel="noopener noreferrer" aria-label="Open Live Processing black-hole"></a>
+            <div class="project-art art-mist">
+              <div class="art-top"><span>05 / VISUALIZATION</span><span>COMPLETED</span></div>
+              <div class="art-orb orb-violet"></div>
+              <div class="art-word">LIVE<br><span>BLACK HOLE</span></div>
+              <div class="art-bottom"><span>SIMULATION</span><span>THREE.JS / VITE</span></div>
+            </div>
+            <div class="project-meta"><div><span class="project-index">05</span><h3>Live Processing black-hole</h3></div><span class="status status-built">COMPLETED</span></div>
+            <p>Real-time interactive black hole &amp; starfield visualization.</p>
+          </article>
+
+          <article class="project-card" style="--i:5">
+            <a class="project-card-link" href="https://intelligent-conveyor-frontend.onrender.com" target="_blank" rel="noopener noreferrer" aria-label="Open Live Processing black-hole"></a>
+            <div class="project-art art-linen">
+              <div class="art-top"><span>06 / INDUSTRIAL</span><span>COMPLETED</span></div>
+              <div class="art-orb orb-amber"></div>
+              <div class="art-word">SMART<br><span>CONVEYOR</span></div>
+              <div class="art-bottom"><span>BELT MONITORING</span><span>SOFTWARE</span></div>
+            </div>
+            <div class="project-meta"><div><span class="project-index">06</span><h3>Prototype-Software-For--Conveyor-Belt</h3></div><span class="status status-built">COMPLETED</span></div>
+            <p>Prototype monitoring software concept for conveyor belt systems.</p>
+          </article>
+        </div>
       </div>
-      <div class="project-track" tabindex="0" aria-label="Horizontally scrollable project gallery">
-        <article class="project-card project-feature">
-          <div class="project-art sage-art">
-            <div class="art-top"><span>PROJECT / 001</span><span>IN PROGRESS</span></div>
-            <div class="sage-orb"><div class="orb-core">S</div><i></i><i></i><i></i></div>
-            <div class="art-word">SAGE<span>AI</span></div>
-            <div class="art-bottom"><span>PERSONAL AI ASSISTANT</span><span>PYTHON / FASTAPI</span></div>
-          </div>
-          <div class="project-meta"><div><span class="project-index">01</span><h3>SAGE AI</h3></div><span class="status">UNDER DEVELOPMENT</span></div>
-          <p>A modular personal AI assistant designed around useful interactions, tool-oriented architecture, and a growing set of capabilities.</p>
-          <div class="tech-list"><span>Python</span><span>FastAPI</span><span>OpenRouter</span><span>SQLite</span></div>
-        </article>
 
-        <article class="project-card">
-          <div class="project-art doubt-art">
-            <div class="art-top"><span>PROJECT / 002</span><span>IN PROGRESS</span></div>
-            <div class="doubt-ui"><div class="ui-bar"></div><div class="ui-line wide"></div><div class="ui-line"></div><div class="ui-pill">DOUBT / RESOLVED?</div><div class="ui-columns"><i></i><i></i><i></i></div></div>
-            <div class="art-word">DOUBT<span>SENSE</span></div>
-            <div class="art-bottom"><span>STUDENT × TEACHER</span><span>WEB PLATFORM</span></div>
-          </div>
-          <div class="project-meta"><div><span class="project-index">02</span><h3>DoubtSense</h3></div><span class="status">UNDER DEVELOPMENT</span></div>
-          <p>A student–teacher platform concept for organizing academic questions and making doubt resolution more structured.</p>
-          <div class="tech-list"><span>React</span><span>Node.js</span><span>SQLAlchemy</span></div>
-        </article>
+      <div class="work-group">
+        <div class="work-group-head">
+          <span>02 / IN PROGRESS</span>
+          <span>MORE TAKING SHAPE</span>
+        </div>
+        <div class="work-cards-grid work-cards-compact">
+          <article class="project-card" style="--i:6">
+            <a class="project-card-link" href="https://github.com/gokul307-tech/PageDelta-Extension" target="_blank" rel="noopener noreferrer" aria-label="Open Live Processing black-hole"></a>
+            <div class="project-art art-light-card">
+              <div class="art-top"><span>01 / IN PROGRESS</span><span>ACTIVE</span></div>
+              <div class="art-word">PAGE<br><span>DELTA</span></div>
+              <div class="art-bottom"><span>WEB BUILD</span><span>↗</span></div>
+            </div>
+            <div class="project-meta"><div><span class="project-index">01</span><h3>PageDelta</h3></div><span class="status">IN PROGRESS</span></div>
+          </article>
 
-        <article class="project-card">
-          <div class="project-art student-art">
-            <div class="art-top"><span>PROJECT / 003</span><span>EDTECH</span></div>
-            <div class="chart-card"><div class="chart-label">STUDENT OVERVIEW</div><div class="bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="chart-foot"><span>PLAN</span><span>TRACK</span><span>LEARN</span></div></div>
-            <div class="art-word">STUDENT<br><span>SYSTEM</span></div>
-            <div class="art-bottom"><span>LEARNING COMPANION</span><span>PYTHON / STREAMLIT</span></div>
-          </div>
-          <div class="project-meta"><div><span class="project-index">03</span><h3>Student System</h3></div><span class="status status-built">BUILT</span></div>
-          <p>An educational platform for subjects, notes, marks, study planning, charts, quizzes, and AI-assisted note explanation.</p>
-          <div class="tech-list"><span>Python</span><span>Streamlit</span><span>SQLite</span></div>
-        </article>
+          <article class="project-card" style="--i:7">
+            <a class="project-card-link" href="https://github.com/gokul307-tech/Sage-personal-AI" target="_blank" rel="noopener noreferrer" aria-label="Open Live Processing black-hole"></a>
+            <div class="project-art art-light-card">
+              <div class="art-top"><span>02 / IN PROGRESS</span><span>ACTIVE</span></div>
+              <div class="art-word">SAGE<br><span>AI</span></div>
+              <div class="art-bottom"><span>ASSISTANT</span><span>◎</span></div>
+            </div>
+            <div class="project-meta"><div><span class="project-index">02</span><h3>Sage</h3></div><span class="status">IN PROGRESS</span></div>
+          </article>
 
-        <article class="project-card">
-          <div class="project-art debug-art">
-            <div class="art-top"><span>PROJECT / 004</span><span>DEVELOPER TOOL</span></div>
-            <div class="terminal"><div class="terminal-head"><i></i><i></i><i></i><span>debug.py</span></div><pre><b>01</b>  def solve():<br><b>02</b>      result = 42<br><b>03</b>      <em>print(result)</em><br><b>04</b>  <span>✓ diagnostics ready</span></pre></div>
-            <div class="art-word">PYTHON<br><span>DEBUGGER</span></div>
-            <div class="art-bottom"><span>ERROR INSIGHTS</span><span>FLASK</span></div>
-          </div>
-          <div class="project-meta"><div><span class="project-index">04</span><h3>Simple Python Debugger</h3></div><span class="status status-built">BUILT</span></div>
-          <p>A browser-based debugging utility that surfaces syntax and runtime errors with tracebacks and rule-based suggestions.</p>
-          <div class="tech-list"><span>Python</span><span>Flask</span><span>Jinja2</span></div>
-        </article>
-        <div class="track-end"><span>MORE TO COME</span><b>→</b></div>
+          <article class="project-card" style="--i:8">
+            <a class="project-card-link" href="https://github.com/gokul307-tech/DoubtSense" target="_blank" rel="noopener noreferrer" aria-label="Open Live Processing black-hole"></a>
+            <div class="project-art art-light-card">
+              <div class="art-top"><span>03 / IN PROGRESS</span><span>ACTIVE</span></div>
+              <div class="art-word">DOUBT<br><span>SENSE</span></div>
+              <div class="art-bottom"><span>LEARNING</span><span>?</span></div>
+            </div>
+            <div class="project-meta"><div><span class="project-index">03</span><h3>DoubtSense</h3></div><span class="status">IN PROGRESS</span></div>
+          </article>
+
+          <article class="project-card" style="--i:9">
+            <a class="project-card-link" href="https://github.com/gokul307-tech/Feastymap-next" target="_blank" rel="noopener noreferrer" aria-label="Open Live Processing black-hole"></a>
+            <div class="project-art art-light-card">
+              <div class="art-top"><span>04 / IN PROGRESS</span><span>ACTIVE</span></div>
+              <div class="art-word">FEASTY<br><span>MAP</span></div>
+              <div class="art-bottom"><span>DISCOVERY</span><span>Next</span></div>
+            </div>
+            <div class="project-meta"><div><span class="project-index">04</span><h3>FeastyMap-Next</h3></div><span class="status">IN PROGRESS</span></div>
+          </article>
+
+          <article class="project-card" style="--i:10">
+            <a class="project-card-link" href="https://github.com/gokul307-tech/Simple-Study-System" target="_blank" rel="noopener noreferrer" aria-label="Open Live Processing black-hole"></a>
+            <div class="project-art art-light-card">
+              <div class="art-top"><span>05 / IN PROGRESS</span><span>ACTIVE</span></div>
+              <div class="art-word">SIMPLE<br><span>STUDY</span></div>
+              <div class="art-bottom"><span>EDTECH</span><span>+</span></div>
+            </div>
+            <div class="project-meta"><div><span class="project-index">05</span><h3>Simple Study System</h3></div><span class="status">IN PROGRESS</span></div>
+          </article>
+        </div>
       </div>
-      <div class="track-hint"><span>DRAG / SHIFT + SCROLL</span><span class="track-line"></span><span>01 — 04</span></div>
-    </section>
+    </div>
+  </div>
+</section>
 
     <section class="scene stack" id="stack" data-scene="04">
       <div class="section-kicker reveal"><span>04 / TECHNICAL UNIVERSE</span><span>TOOLS ARE A MEANS, NOT THE END</span></div>
